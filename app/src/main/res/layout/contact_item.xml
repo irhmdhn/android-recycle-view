@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvContact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="24dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_avatar"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="def_name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08XXXXXXXX"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:layout_below="@+id/tvName"
+            />
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="def_status"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
