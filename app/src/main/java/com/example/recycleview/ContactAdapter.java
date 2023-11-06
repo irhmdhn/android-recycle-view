@@ -68,8 +68,9 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
                 }
             });
         }
-        public interface OnItemClickListener {
-            void onItemClick(ContactModel item);
-        }
+
+    }
+    public interface OnItemClickListener {
+        void onItemClick(ContactModel item);
     }
 }
